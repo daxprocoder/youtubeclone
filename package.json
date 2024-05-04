@@ -2,8 +2,10 @@
   "name": "youtubeclone",
   "version": "1.0.0",
   "description": "YouTube Clone is a project aimed at replicating the core features and functionalities of the popular video-sharing platform, YouTube. Developed using modern web technologies, this project provides a comprehensive platform for users to upload, view, like, comment on, and share videos.",
-  "main": "\\",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start":"nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "daxprocoder",

@@ -3,7 +3,7 @@ import { asyncHandler } from "../utils/ayscnHandler.js";
 
 const registerUser = asyncHandler(async (req,res) => {
     res.status(200).json({
-        message:"ok"
+        message:"dax pro coder"
     })
 }) 
 

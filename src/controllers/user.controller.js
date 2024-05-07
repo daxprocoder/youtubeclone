@@ -1,7 +1,7 @@
 import { asyncHandler } from "../utils/ayscnHandler.js";
 import {ApiError} from "../utils/ApiError.js"
 import {User} from "../models/user.model.js"
-import {uploadOnCloudnairy} from "../utils/cloudnairy.js"
+import { uploadOnCloudnary } from "../utils/cloudnairy.js"
 import { APiResponse } from "../utils/ApiResponse.js";
 
 
@@ -37,8 +37,8 @@ const registerUser = asyncHandler(async (req,res) => {
         }
 
 
-        const avatar = await uploadOnCloudnairy(avatarLocalPath)
-        const coverImage = await uploadOnCloudnairy(coverImageLocalPath)
+    const avatar = await uploadOnCloudnary(avatarLocalPath)
+    const coverImage = await uploadOnCloudnary(coverImageLocalPath)
 
         if(!avatar){
             throw new ApiError(400, "avatar file is required")

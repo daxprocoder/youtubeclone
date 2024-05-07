@@ -5,3 +5,5 @@ class APiResponse{
     }
     
 }
+
+export {APiResponse}

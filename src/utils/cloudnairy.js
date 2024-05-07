@@ -13,10 +13,10 @@ const uploadOnCloudnary  = async(localFilePath) => {
         if (!localFilePath) return null
         //upload file to cloudinary
         const response = await cloudinary.uploader.upload(localFilePath,{
-            resource_type:"auto"
+            resourdce_type:"auto"
         })
         //file successfully uploaded 
-        fs.unlinkSync(localFilePath)
+        fs.unlinkSync(localFilePath) //unlinking the file from the temp
         return response;
     } catch (error) {
         fs.unlinkSync(localFilePath) //remove the locally saved temproray file as in the server in upload .
